@@ -1,0 +1,17 @@
+# Environment variables / Secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build & Dist
+dist/
+build/
+
+# Uploaded files
+uploads/
+
+# Logs
+*.log
