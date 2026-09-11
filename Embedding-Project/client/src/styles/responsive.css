@@ -1,0 +1,178 @@
+/* Large Desktop Layout */
+@media (min-width: 1200px) {
+  .app-container {
+    max-width: 1360px;
+    padding: 2.5rem 2rem;
+  }
+
+  .main-content {
+    grid-template-columns: 400px 1fr;
+    gap: 2.25rem;
+  }
+
+  .chat-container {
+    height: 700px;
+  }
+}
+
+/* Medium Desktop & Laptop Layout */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .app-container {
+    max-width: 1100px;
+    padding: 2rem 1.5rem;
+  }
+
+  .main-content {
+    grid-template-columns: 350px 1fr;
+    gap: 1.75rem;
+  }
+
+  .chat-container {
+    height: 650px;
+  }
+}
+
+/* Tablet Dual/Single Column Layout (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .app-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .main-content {
+    grid-template-columns: 320px 1fr;
+    gap: 1.25rem;
+  }
+
+  .chat-container {
+    height: 600px;
+  }
+
+  .upload-box {
+    padding: 1.75rem 1rem;
+  }
+}
+
+/* Mobile Layout (< 768px) */
+@media (max-width: 767px) {
+  .app-container {
+    padding: 1.25rem 0.85rem;
+    gap: 1.5rem;
+  }
+
+  .app-header {
+    padding: 1.1rem 1rem;
+    border-radius: 16px;
+    gap: 0.6rem;
+  }
+
+  .logo h1 {
+    font-size: 1.65rem;
+  }
+
+  .subtitle {
+    font-size: 0.86rem;
+  }
+
+  .status-badges-row {
+    gap: 0.45rem;
+  }
+
+  .badge-pill {
+    font-size: 0.72rem;
+    padding: 4px 10px;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .upload-box {
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+  }
+
+  .upload-title {
+    font-size: 0.95rem;
+  }
+
+  .upload-subtitle {
+    font-size: 0.78rem;
+  }
+
+  .chat-container {
+    height: 540px;
+    border-radius: 16px;
+  }
+
+  .messages {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .message {
+    max-width: 94%;
+  }
+
+  .message-bubble {
+    padding: 0.85rem 1.05rem;
+    font-size: 0.88rem;
+    border-radius: 14px;
+  }
+
+  .input-area {
+    padding: 0.85rem 0.95rem;
+    gap: 0.6rem;
+  }
+
+  .input-area input,
+  .question-input,
+  #questionInput {
+    padding: 0.75rem 0.9rem 0.75rem 2.5rem;
+    font-size: 0.88rem;
+    border-radius: 10px;
+  }
+
+  .btn-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 10px;
+  }
+
+  .pipeline-config-card {
+    padding: 1.1rem;
+    border-radius: 16px;
+  }
+
+  .mode-selector {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .mode-btn {
+    width: 100%;
+    padding: 0.6rem;
+  }
+}
+
+/* Small Smartphone Media Queries (< 480px) */
+@media (max-width: 479px) {
+  .app-container {
+    padding: 0.85rem 0.6rem;
+  }
+
+  .chat-container {
+    height: 480px;
+  }
+
+  .message {
+    max-width: 98%;
+  }
+
+  .input-area input,
+  .question-input,
+  #questionInput {
+    font-size: 0.84rem;
+  }
+}
